@@ -22,7 +22,7 @@ public class UmsMemberServiceImpl implements UmsMemberService {
 
     @Override
     public List<UmsMember> getAll() {
-        List<UmsMember> umsMemberList = memberMapper.selectAll();
+        List<UmsMember> umsMemberList = memberMapper.selectAll(); //memberMapper.selectAllUser(); //memberMapper.selectAll();
         return umsMemberList;
     }
 }
