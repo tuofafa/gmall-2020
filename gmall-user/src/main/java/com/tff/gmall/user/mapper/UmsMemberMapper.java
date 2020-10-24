@@ -1,10 +1,9 @@
 package com.tff.gmall.user.mapper;
 
-import com.tff.gmall.user.bean.UmsMember;
+
+import com.tff.gmall.beans.UmsMember;
 import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
-
-import java.util.List;
 
 /**
  * @author tuofafa
