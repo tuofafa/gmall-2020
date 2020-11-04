@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class PmsBaseAttrInfo implements Serializable {
 
-    /*@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column
     private String id;
@@ -22,8 +22,17 @@ public class PmsBaseAttrInfo implements Serializable {
     private String catalog3Id;
     @Column
     private String isEnabled;
+
+    public List<PmsBaseAttrValue> getAttrValueList() {
+        return attrValueList;
+    }
+
+    public void setAttrValueList(List<PmsBaseAttrValue> attrValueList) {
+        this.attrValueList = attrValueList;
+    }
+
     @Transient
-    List<BaseAttrValue> attrValueList;
+    List<PmsBaseAttrValue> attrValueList;
 
     public String getId() {
         return id;
@@ -57,11 +66,5 @@ public class PmsBaseAttrInfo implements Serializable {
         this.isEnabled = isEnabled;
     }
 
-    public List<BaseAttrValue> getAttrValueList() {
-        return attrValueList;
-    }
 
-    public void setAttrValueList(List<BaseAttrValue> attrValueList) {
-        this.attrValueList = attrValueList;
-    }
-*/}
+}

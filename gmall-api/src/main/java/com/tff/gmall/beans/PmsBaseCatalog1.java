@@ -3,13 +3,14 @@ package com.tff.gmall.beans;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @param
  * @return
  */
 public class PmsBaseCatalog1 implements Serializable {
-    /*@Id
+    @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
@@ -17,7 +18,7 @@ public class PmsBaseCatalog1 implements Serializable {
     private String name;
 
     @Transient
-    private List<BaseCatalog2> catalog2s;
+    private List<PmsBaseCatalog2> catalog2s;
 
     public String getId() {
         return id;
@@ -33,6 +34,6 @@ public class PmsBaseCatalog1 implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }*/
+    }
 }
 
